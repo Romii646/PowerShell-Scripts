@@ -21,7 +21,7 @@ try{
 }
 
 try{
-# Register the script to run once at startup
+# Register the script to the registry and run once at startup
     New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce" -Name "RenameAssetBySerial" -Value "PowerShell.exe -ExecutionPolicy Bypass -File `"$targetPath`"" -PropertyType String -Force
     Write-Log "RunOnce key created. Script will run at next user login."
 } catch {
