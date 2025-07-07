@@ -8,7 +8,7 @@ $serial = (Get-WmiObject Win32_BIOS).SerialNumber.Trim()
 $newName = "2311s-$serial"
 
 # Log file path
-$logFile = "C:\Users\Public\Desktop\RenameAssetBySerial.log"
+$logFile = "C:\ProgramData\RenameAssetBySerial.log"
 
 # Helper function to write logs
 function Write-Log ($message) {
